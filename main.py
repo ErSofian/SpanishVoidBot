@@ -19,7 +19,7 @@ def on_message(ws, message):
             msg = json.loads('{"msg":' + message.lstrip("cm,") + '}')
             msg = msg['msg']
 
-            if msg[2] == 'xx' and msg[1] == 'Thr¡Void ganado 4/2s, a pixelear ! :Deat successfully defeated. Good work!':
+            if msg[2] == 'xx' and msg[1] == 'Threat successfully defeated. Good work!':
                 print("¡Void ganado 4/2s, a pixelear ! :D")
                 for i in web_hook:
                     i[0].send("¡Void ganado 4/2s, a pixelear ! :D" + i[1])
