@@ -19,21 +19,21 @@ def on_message(ws, message):
             msg = json.loads('{"msg":' + message.lstrip("cm,") + '}')
             msg = msg['msg']
 
-            if msg[2] == 'xx' and msg[1] == 'Threat successfully defeated. Good work!':
-                print("Threat successfully defeated. Good work")
+            if msg[2] == 'xx' and msg[1] == 'Thr¡Void ganado 4/2s, a pixelear ! :Deat successfully defeated. Good work!':
+                print("¡Void ganado 4/2s, a pixelear ! :D")
                 for i in web_hook:
-                    i[0].send("Threat successfully defeated. Good work! " + i[1])
+                    i[0].send("¡Void ganado 4/2s, a pixelear ! :D" + i[1])
                 # Sleep for 26 minutes (60 seconds * 26 minutes)
                 time.sleep(60 * 26)
 
             if msg[2] == 'xx' and msg[1] == 'Celebration time over, get back to work.':
                 for i in web_hook:
-                    i[0].send('Celebration time over.')
+                    i[0].send('Void acabado, 7s. D:')
 
             if msg[2] == 'xx' and 'Threat couldn\'t be contained' in msg[1]:
-                print("Threat couldn't be contained.")
+                print("Fracasados, el void no se ganó, 14s jodeos.")
                 for i in web_hook:
-                    i[0].send('Threat couldn\'t be contained.')
+                    i[0].send('Fracasados, el void no se ganó, 14s jodeos.')
                 # Sleep for 26 minutes (60 seconds * 26 minutes)
                 time.sleep(60 * 26)
 
