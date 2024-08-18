@@ -1,5 +1,0 @@
-[BOTCONFIG]
-name = name
-token = 
-auth_id = s
-prefix = p!
